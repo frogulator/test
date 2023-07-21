@@ -1,0 +1,151 @@
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" />
+<link rel="stylesheet" href="style.css">
+
+
+    <div class="chat">
+        <div class="chat-header">
+                <div class="input-group-text" (click)="sendMessage()">
+                    <div class="arrow" id="arrow"></div>
+                    <div class="arrow2" id="arrow"></div>
+                </div>
+                <div class="userProfile">
+                    <a href="javascript:void(0);" data-toggle="modal" data-target="#view_info">                        
+                        <img src="chicken.png" alt="avatar">
+                    </a>
+                    <p class="otherUserName">kimmy</p>
+                </div>
+        </div>
+    
+
+        <div class="messages">
+            <div class="spacerTopBottom"></div>
+            <div class="messageContainer">
+              <div class="spacerSmall"></div>
+              <div class="myMessage">Hey there!</div>
+              <div class="spacerBig"></div>
+            </div>
+            <div class="spacer"></div>
+            <div class="messageContainer">
+              <div class="spacerBig"></div>
+              <div class="theirMessage">Hi! How are you?</div>
+              <div class="spacerSmall"></div>
+            </div>
+            <div class="spacer"></div>
+            <div class="messageContainer">
+              <div class="spacerSmall"></div>
+              <div class="myMessage">I'm good, thanks for asking! How about you?</div>
+              <div class="spacerBig"></div>
+            </div>
+            <div class="spacer"></div>
+            <div class="messageContainer">
+              <div class="spacerBig"></div>
+              <div class="theirMessage">I'm doing great too! Enjoying the day.</div>
+              <div class="spacerSmall"></div>
+            </div>
+            <div class="spacer"></div>
+            <div class="messageContainer">
+              <div class="spacerSmall"></div>
+              <div class="myMessage">That's awesome! Any plans for the weekend?</div>
+              <div class="spacerBig"></div>
+            </div>
+            <div class="spacer"></div>
+            <div class="messageContainer">
+              <div class="spacerBig"></div>
+              <div class="theirMessage">Not yet, but I'm thinking of going hiking. How about you?</div>
+              <div class="spacerSmall"></div>
+            </div>
+            <div class="spacer"></div>
+            <div class="messageContainer">
+              <div class="spacerSmall"></div>
+              <div class="myMessage">Oh, hiking sounds fun! I might catch up on some movies.</div>
+              <div class="spacerBig"></div>
+            </div>
+            <div class="spacer"></div>
+            <div class="messageContainer">
+              <div class="spacerBig"></div>
+              <div class="theirMessage">That sounds like a relaxing plan. Enjoy your weekend!</div>
+              <div class="spacerSmall"></div>
+            </div>
+            <div class="spacer"></div>
+
+              <div class="messageContainer">
+                <div class="spacerSmall"></div>
+                <div class="myMessage">That's awesome! Any plans for the weekend?</div>
+                <div class="spacerBig"></div>
+              </div>
+              <div class="spacer"></div>
+              <div class="messageContainer">
+                <div class="spacerBig"></div>
+                <div class="theirMessage">Not yet, but I'm thinking of going hiking. How about you?</div>
+                <div class="spacerSmall"></div>
+              </div>
+              <div class="spacer"></div>
+              <div class="messageContainer">
+                <div class="spacerSmall"></div>
+                <div class="myMessage">Oh, hiking sounds fun! I might catch up on some movies.</div>
+                <div class="spacerBig"></div>
+              </div>
+              <div class="spacer"></div>
+              <div class="messageContainer">
+                <div class="spacerBig"></div>
+                <div class="theirMessage">That sounds like a relaxing plan. Enjoy your weekend!</div>
+                <div class="spacerSmall"></div>
+              </div>
+              <div class="spacer"></div>
+              <div class="messageContainer">
+                <div class="spacerBig"></div>
+                <div class="theirMessage">Not yet, but I'm thinking of going hiking. How about you?</div>
+                <div class="spacerSmall"></div>
+              </div>
+              <div class="spacer"></div>
+              <div class="messageContainer">
+                <div class="spacerSmall"></div>
+                <div class="myMessage">Oh, hiking sounds fun! I might catch up on some movies.</div>
+                <div class="spacerBig"></div>
+              </div>
+              <div class="spacer"></div>
+              <div class="messageContainer">
+                <div class="spacerBig"></div>
+                <div class="theirMessage">That sounds like a relaxing plan. Enjoy your weekend!</div>
+                <div class="spacerSmall"></div>
+              </div>
+              <div class="spacerTopBottom"></div>
+          </div>
+
+          <div class="message">
+            <span class="picUpload" (click)="sendMessage()"><i class="fa fa-plus"></i></span>
+            <input type="text" [(ngModel)]="inputText" class="form-control" placeholder="Enter text here...">
+            <span class="send" (click)="sendMessage()"><i class="fa fa-send"></i></span>
+        </div>
+          
+            
+        </div>
+    </div>
+      
+
+
+
+<!-- <div #chatWindow class="chat-history">
+            <ul class="mb-0">
+                <li *ngFor="let message of messagesArray" class="clearfix">
+                    <div class="message-data text-right">
+                        <span class="message-data-time">10:10 AM, Today</span>
+                    </div>
+                    <div class="theirMessage"
+                        [ngClass]="{'my-message': message.userId === userId, 'other-message float-right': message.userId !== userId}">
+                        {{message.text}}</div>
+                </li>
+                    <div class="message"
+                        [ngClass]="{'my-message': message.userId === userId, 'other-message float-right': message.userId !== userId}">
+                        {{message.text}}</div>
+                </li>
+            </ul>
+        </div> -->
+
+        <!-- <ul class="messages">
+            <li class="theirMessage">hiiiiii</li>
+            <li class="theirMessage">hows it hanging</li>
+            <li class="myMessage">just chillin</li>
+            <li class="myMessage">u?</li>
+            <li class="theirMessage">same here :) </li>
+        </ul> -->
